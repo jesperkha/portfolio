@@ -16,9 +16,85 @@
 				font-family: "Sarabun";
 				font-weight: 200;
 			}
+
+			.shape {
+				position: absolute;
+				transform: translate(-50%, -50%);
+				opacity: 0;
+			}
+
+			.pentagon-1 {
+				top: 50%;
+				left: 0;
+				transform: translate(-150%, -50%) rotate(-12deg);
+				animation: shoot-in-left 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+			}
+
+			.pentagon-2 {
+				top: 50%;
+				left: 25%;
+				transform: translate(-150%, -50%);
+				animation: shoot-in-left 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+			}
+
+			.rectangle-1 {
+				top: 50%;
+				left: 75%;
+				transform: translate(150%, -50%) rotate(12deg);
+				animation: shoot-in-right 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+			}
+
+			.rectangle-2 {
+				top: 50%;
+				left: 100%;
+				transform: translate(150%, -50%);
+				animation: shoot-in-right 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+			}
+
+			@keyframes shoot-in-left {
+				0% {
+					transform: translate(-150%, -50%) rotate(-12deg);
+					opacity: 0;
+				}
+				100% {
+					transform: translate(-50%, -50%) rotate(-12deg);
+					opacity: 0.5;
+				}
+			}
+
+			@keyframes shoot-in-right {
+				0% {
+					transform: translate(150%, -50%) rotate(12deg);
+					opacity: 0;
+				}
+				100% {
+					transform: translate(-50%, -50%) rotate(12deg);
+					opacity: 0.5;
+				}
+			}
 		</style>
 	</head>
 	<body class="w-full overflow-x-hidden">
+		<img
+			src="assets/pentagon.svg"
+			class="pentagon-2 shape absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-0 -rotate-12 w-[25vw] opacity-30"
+			alt=""
+		/>
+		<img
+			src="assets/pentagon.svg"
+			class="pentagon-1 shape absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/4 w-[10vw] opacity-50"
+			alt=""
+		/>
+		<img
+			src="assets/rectangle.svg"
+			class="shape rectangle-1 absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-3/4 w-[10vw] rotate-12 opacity-50"
+			alt=""
+		/>
+		<img
+			src="assets/rectangle.svg"
+			class="shape rectangle-2 absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-full w-[25vw] opacity-30"
+			alt=""
+		/>
 		<nav class="flex justify-between items-center h-[10vh] p-5">
 			<div class="w-1/3"><!-- empty --></div>
 			<div class="flex justify-center gap-5 w-1/3">
@@ -37,8 +113,8 @@
 			<p class="font-bold text-5xl">I'm Jesper</p>
 			<p class="-rotate-90 text-xl m-10">〈</p>
 		</header>
-		<section class="h-[10vh] border-t"></section>
-		<section class="flex flex-col gap-20 justify-around">
+		<section class="h-[10vh] bg-gray-50"></section>
+		<section class="flex flex-col gap-20 justify-around bg-gray-50">
 			<div class="flex justify-center items-center w-full flex-col">
 				<div class="w-1/4 min-w-[600px] flex flex-col gap-5 text-xl">
 					<p class="font-bold">About me</p>
@@ -63,10 +139,10 @@
 				</div>
 			</div>
 		</section>
-		<section class="h-[10vh] border-b"></section>
+		<section class="h-[10vh] bg-gray-50"></section>
 		<section class="h-[100vh] text-xl">
 			<p class="font-bold text-4xl text-center m-24">Projects</p>
-			<div class="w-1/2 min-w-[900px] grid grid-cols-2 grid-rows-4 m-auto gap-10 gap-y-24">
+			<div class="w-1/2 min-w-[900px] grid grid-cols-2 grid-rows-3 m-auto gap-10 gap-y-12">
 				<div class="space-y-5">
 					<p class="font-bold text-2xl">Rum</p>
 					<p>Rum is a terminal editor made 100% native for Windows in C with no third party dependencies.</p>
@@ -79,9 +155,6 @@
 				<div>
 					<img src="assets/rum_demo.gif" alt="Demo gif of Rum editor" />
 				</div>
-				<div>
-					<img src="assets/echo_web.png" alt="" />
-				</div>
 				<div class="space-y-5">
 					<p class="font-bold text-2xl">echo website</p>
 					<p>The website developed and managed by the webkom student group.</p>
@@ -93,8 +166,25 @@
 						>
 					</div>
 				</div>
-				<p>echo web</p>
-				<p>cenv</p>
+				<div>
+					<img src="assets/echo_web.png" alt="echo website" />
+				</div>
+				<div class="space-y-5">
+					<p class="font-bold text-2xl">Fizz</p>
+					<p>A dynamically typed, interpreted programming language built with Go.</p>
+					<p></p>
+					<div class="flex gap-5">
+						<a href="https://github.com/jesperkha/Fizz" class="text-blue-500 hover:underline block">View on GitHub</a>
+					</div>
+				</div>
+				<div class="space-y-5">
+					<p class="font-bold text-2xl">cenv</p>
+					<p>A cli tool to verify the integrity of your .env files. We use it in the echo-web project.</p>
+					<p></p>
+					<div class="flex gap-5">
+						<a href="https://github.com/echo-webkom/cenv" class="text-blue-500 hover:underline block">View on GitHub</a>
+					</div>
+				</div>
 			</div>
 		</section>
 	</body>

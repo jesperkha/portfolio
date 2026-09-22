@@ -71,7 +71,7 @@
         class="min-h-screen bg-white text-black antialiased [font-family:'Sarabun',ui-sans-serif,system-ui] selection:bg-black selection:text-white"
     >
         <!-- Container -->
-        <div class="max-w-4xl mx-auto px-6">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
             <!-- Top nav -->
             <header class="flex items-center justify-between py-8">
                 <a href="#" class="text-lg font-light tracking-wide"
@@ -131,99 +131,157 @@
                 </div>
             </header>
 
-            <!-- About -->
-            <section id="about" class="space-y-4">
-                <div class="flex flex-col gap-y-4">
-                    <h2 class="text-2xl font-light">Om meg</h2>
-                    <p class="text-gray-700 font-light">
-                        Jeg heter Jesper Hammer, er
-                        <span id="age"></span> år gammel, og studerer for en
-                        bachelorgrad i Cyber Sikkerhet ved Universitetet i
-                        Bergen. Jeg er aktiv i studentmiljøet og jobber for
-                        studentorganisasjonen
+            <!-- Hero -->
+            <main
+                class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-16"
+            >
+                <section class="order-2 lg:order-1">
+                    <h1 class="text-4xl md:text-5xl font-light leading-tight">
+                        Hei. Jeg er <span class="font-semibold">Jesper</span>.
+                    </h1>
+                    <p class="mt-6 text-lg text-gray-700 font-light max-w-xl">
+                        Studerer Cyber Sikkerhet ved Universitetet i Bergen.
+                    </p>
+
+                    <div class="mt-8 flex flex-wrap gap-1">
                         <a
-                            target="_blank"
-                            href="https://echo.uib.no"
-                            rel="noopener noreferrer"
-                            class="text-black font-medium hover:underline"
-                            >echo ⤤</a
-                        >. Hobbyer inkluderer fotografi, matlaging, musikk, og
-                        programmering.
-                    </p>
-                </div>
-                <div
-                    class="border border-x-0 border-t-0 border-b-gray-200 pb-4 pt-10"
-                >
-                    <p class="text-sm font-light text-gray-500">
-                        Jobb og erfaring
-                    </p>
-                </div>
-                <div class="space-y-6">
-                    <div class="flex flex-col gap-y-4">
-                        <h2 class="text-2xl font-light">Bekk og Kartverket</h2>
-                        <p class="text-gray-700 font-light">
-                            Sommeren 2025 jobbet jeg som utvikler for Nordea Liv
-                            og Pensjon i et team med tre andre masterstudenter.
-                            Vi fornyet og utviklet mikrotjenester i Nordeas
-                            interne systemer.
-                        </p>
-                        <p class="text-gray-700 font-light">
-                            Jeg fikk erfaring med Java og Spring Boot, jobbe i
-                            et agilt team, og verktøy som Jira og Confluence.
-                            Jeg lærte å utvikle REST APIer som mikrotjenster og
-                            effektiv testing med JUnit, Mockito, og H2
-                            databaser.
-                        </p>
+                            href="#projects"
+                            class="inline-block border border-black px-4 py-2 text-sm rounded-sm font-light hover:bg-black hover:text-white transition"
+                            >Se prosjekter</a
+                        >
+                        <a
+                            href="#contact"
+                            class="inline-block px-4 py-2 text-sm rounded-sm font-light hover:underline"
+                            >Kontakt meg</a
+                        >
                     </div>
-                    <div class="flex flex-col gap-y-4">
-                        <h2 class="text-2xl font-light">
-                            Nordea Liv og Pensjon
-                        </h2>
-                        <p class="text-gray-700 font-light">
-                            Sommeren 2025 jobbet jeg som utvikler for Nordea Liv
-                            og Pensjon i et team med tre andre masterstudenter.
-                            Vi fornyet og utviklet mikrotjenester i Nordeas
-                            interne systemer.
-                        </p>
-                        <p class="text-gray-700 font-light">
-                            Jeg fikk erfaring med Java og Spring Boot, jobbe i
-                            et agilt team, og verktøy som Jira og Confluence.
-                            Jeg lærte å utvikle REST APIer som mikrotjenster og
-                            effektiv testing med JUnit, Mockito, og H2
-                            databaser.
-                        </p>
+                </section>
+            </main>
+
+            <!-- Decorative divider -->
+            <div class="my-12 border-t border-black/3"></div>
+
+            <!-- About -->
+            <section id="about" class="py-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+                    <div class="md:col-span-2 flex flex-col gap-y-4">
+                        <div class="flex flex-col gap-y-4">
+                            <h2 class="text-2xl font-light">Om meg</h2>
+                            <p class="text-gray-700 font-light">
+                                Jeg heter Jesper Hammer, er
+                                <span id="age"></span> år gammel, og studerer
+                                for en bachelorgrad i Cyber Sikkerhet ved
+                                Universitetet i Bergen. Jeg er aktiv i
+                                studentmiljøet og jobber for
+                                studentorganisasjonen
+                                <a
+                                    target="_blank"
+                                    href="https://echo.uib.no"
+                                    rel="noopener noreferrer"
+                                    class="text-black font-medium hover:underline"
+                                    >echo ⤤</a
+                                >. Hobbyer inkluderer fotografi, matlaging,
+                                musikk, og programmering.
+                            </p>
+                        </div>
+                        <div
+                            class="border border-x-0 border-t-0 border-b-gray-200 pb-4 pt-10"
+                        >
+                            <p class="text-sm font-light text-gray-500">
+                                Jobb og erfaring
+                            </p>
+                        </div>
+                        <div class="flex flex-col gap-y-4">
+                            <h2 class="text-2xl font-light">
+                                Nordea Liv og Pensjon
+                            </h2>
+                            <p class="text-gray-700 font-light">
+                                Sommeren 2025 jobbet jeg som utvikler for Nordea
+                                Liv og Pensjon i et team med tre andre
+                                masterstudenter. Vi fornyet og utviklet
+                                mikrotjenester i Nordeas interne systemer.
+                            </p>
+                            <p class="text-gray-700 font-light">
+                                Jeg fikk erfaring med Java og Spring Boot, jobbe
+                                i et agilt team, og verktøy som Jira og
+                                Confluence. Jeg lærte å utvikle REST APIer som
+                                mikrotjenster og effektiv testing med JUnit,
+                                Mockito, og H2 databaser.
+                            </p>
+                        </div>
+                        <div
+                            class="border border-x-0 border-t-0 border-b-gray-200 pb-4 pt-10"
+                        >
+                            <p class="text-sm font-light text-gray-500">Verv</p>
+                        </div>
+                        <div class="flex flex-col gap-y-4">
+                            <h2 class="text-2xl font-light">
+                                echo hovedstyre (2025-26)
+                            </h2>
+                            <p class="text-gray-700 font-light">
+                                Jeg var medlem av hovedstyret i echo,
+                                studentorganisasjonen for informatikkstudenter
+                                ved Universitetet i Bergen. Her jobbet jeg med å
+                                forbedre studentmiljøet, tilby både sosiale og
+                                faglige arrangementer, hadde ansvar for
+                                linjeforeningen sin økonimi, og samarbeidet med
+                                relevante bedrifter.
+                            </p>
+                        </div>
+                        <div class="flex flex-col gap-y-4">
+                            <h2 class="text-2xl font-light">Leder i Webkom</h2>
+                            <p class="text-gray-700 font-light">
+                                Webkom er en undergruppe av echo som utvikler
+                                echo sin nettside og andre in-house teknologiske
+                                løsninger. Her har jeg fått mye erfaring med
+                                webutvikling og backend server-programmering med
+                                Go. Jeg er også leder av gruppen og har ansvar
+                                for kontakt med bedrifter og UiB.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div
-                    class="border border-x-0 border-t-0 border-b-gray-200 pb-4 pt-10"
-                >
-                    <p class="text-sm font-light text-gray-500">Verv</p>
-                </div>
-                <div class="space-y-6">
-                    <div class="flex flex-col gap-y-4">
-                        <h2 class="text-2xl font-light">
-                            echo hovedstyre (2025-26)
-                        </h2>
-                        <p class="text-gray-700 font-light">
-                            Jeg var medlem av hovedstyret i echo,
-                            studentorganisasjonen for informatikkstudenter ved
-                            Universitetet i Bergen. Her jobbet jeg med å
-                            forbedre studentmiljøet, tilby både sosiale og
-                            faglige arrangementer, hadde ansvar for
-                            linjeforeningen sin økonimi, og samarbeidet med
-                            relevante bedrifter.
-                        </p>
-                    </div>
-                    <div class="flex flex-col gap-y-4">
-                        <h2 class="text-2xl font-light">Leder i Webkom</h2>
-                        <p class="text-gray-700 font-light">
-                            Webkom er en undergruppe av echo som utvikler echo
-                            sin nettside og andre in-house teknologiske
-                            løsninger. Her har jeg fått mye erfaring med
-                            webutvikling og backend server-programmering med Go.
-                            Jeg er også leder av gruppen og har ansvar for
-                            kontakt med bedrifter og UiB.
-                        </p>
+
+                    <div class="md:col-span-1 space-y-4">
+                        <div class="p-4 border rounded-sm">
+                            <div class="text-sm text-gray-500 font-light">
+                                Tidligere arbeid
+                            </div>
+                            <ul class="mt-2 font-light flex flex-col gap-4">
+                                <li class="space-y-2 text-gray-700">
+                                    <p class="font-medium text-black">
+                                        Sushi Kokk — Sabrura Sticks & Sushi
+                                    </p>
+                                    <p class="text-sm">
+                                        Jobbet som sushikokk i 6 måneder hos
+                                        Sabrura Galleriet, midt i Bergen
+                                        sentrum.
+                                    </p>
+                                    <p class="text-sm">
+                                        Har erfaring med stenging av
+                                        varmtkjøkken og hektiske hverdager på
+                                        Bergens mest traffikerte restaurant.
+                                    </p>
+                                </li>
+                                <li class="space-y-2 text-gray-700">
+                                    <p class="font-medium text-black">
+                                        Kokk — IKI Sørengkaia
+                                    </p>
+                                    <p class="text-sm">
+                                        Jobbet som assisterende kokk på et
+                                        koreans-japansk fusion restaurant
+                                        konsept kalt IKI.
+                                    </p>
+                                    <p class="text-sm">
+                                        Var vikar for en sykemeldt kokk ut
+                                        sommeren 2023.
+                                    </p>
+                                    <p class="text-sm">
+                                        Jeg håndterte åpning av kjøkken og
+                                        lunsj-salg alene i løpet av sommeren.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -238,10 +296,10 @@
                     eller i et team.
                 </p>
 
-                <div class="mt-6 grid grid-cols-2 gap-6">
+                <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
                     <!-- Rum -->
                     <article
-                        class="p-6 border rounded-sm flex gap-6 hover:shadow-lg transition col-span-2"
+                        class="md:col-span-2 p-6 border rounded-sm flex flex-col md:flex-row gap-6 hover:shadow-lg transition"
                     >
                         <div class="flex-1">
                             <div class="text-sm text-gray-500 font-light">
@@ -276,7 +334,7 @@
 
                     <!-- Echo website -->
                     <article
-                        class="p-6 border rounded-sm flex gap-6 hover:shadow-lg transition col-span-2"
+                        class="p-6 border rounded-sm row-span-2 flex flex-col gap-6 hover:shadow-lg transition"
                     >
                         <div class="flex-1">
                             <div class="text-xs text-gray-500 font-light">
@@ -430,4 +488,3 @@
         </script>
     </body>
 </html>
-

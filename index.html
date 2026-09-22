@@ -52,6 +52,14 @@
         />
 
         <meta name="color-scheme" content="light dark" />
+        <style>
+            .font-display {
+                font-family:
+                    "Iowan Old Style", "Georgia", "Times New Roman", serif;
+                letter-spacing: -0.06em;
+                font-weight: 400;
+            }
+        </style>
     </head>
     <script type="application/ld+json">
         {
@@ -68,360 +76,435 @@
         }
     </script>
     <body
-        class="min-h-screen bg-white text-black antialiased [font-family:'Sarabun',ui-sans-serif,system-ui] selection:bg-black selection:text-white"
+        class="min-h-screen bg-[#f5f1e8] text-[#171613] antialiased [font-family:'Sarabun',ui-sans-serif,system-ui] selection:bg-[#171613] selection:text-[#f5f1e8]"
     >
-        <!-- Container -->
-        <div class="max-w-4xl mx-auto px-6">
-            <!-- Top nav -->
-            <header class="flex items-center justify-between py-8">
-                <a href="#" class="text-lg font-light tracking-wide"
-                    >Jesper Hammer</a
-                >
+        <div class="mx-auto max-w-6xl px-5 sm:px-8 lg:px-10">
+            <header
+                class="sticky top-0 z-20 border-b border-[#171613]/10 bg-[#f5f1e8]/80 backdrop-blur-sm"
+            >
+                <div class="flex items-center justify-between py-5 sm:py-6">
+                    <a href="#" class="text-lg text-[#171613]">Portefølje</a>
 
-                <nav
-                    class="hidden md:flex gap-8 items-center font-light text-sm"
-                >
-                    <a href="#about" class="hover:underline">Om meg</a>
-                    <a href="#projects" class="hover:underline">Prosjekter</a>
-                    <a href="#contact" class="hover:underline">Kontakt</a>
-                </nav>
+                    <nav
+                        class="hidden items-center gap-8 text-sm text-[#171613]/70 md:flex"
+                    >
+                        <a href="#about" class="transition hover:text-[#171613]"
+                            >Om meg</a
+                        >
+                        <a
+                            href="#projects"
+                            class="transition hover:text-[#171613]"
+                            >Prosjekter</a
+                        >
+                        <a
+                            href="#contact"
+                            class="transition hover:text-[#171613]"
+                            >Kontakt</a
+                        >
+                    </nav>
 
-                <div class="flex items-center gap-4">
-                    <a
-                        href="https://github.com/jesperkha"
-                        aria-label="GitHub"
-                        class="p-2 rounded-sm hover:bg-black/5"
-                    >
-                        <svg
-                            alt="GitHub ikon som fører til Jesper Hammer sin GitHub profil"
-                            width="20"
-                            height="20"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            aria-hidden
-                            class="stroke-black"
+                    <div class="flex items-center gap-3">
+                        <a
+                            href="https://github.com/jesperkha"
+                            aria-label="GitHub"
+                            class="flex h-9 w-9 items-center justify-center rounded-full border border-[#171613]/15 transition hover:border-[#171613]/40 hover:bg-[#171613]/5"
                         >
-                            <path
-                                d="M12 .5a12 12 0 00-3.8 23.4c.6.1.8-.2.8-.5v-2c-3.3.7-4-1.6-4-1.6-.6-1.6-1.4-2-1.4-2-1.2-.8.1-.8.1-.8 1.4.1 2.2 1.4 2.2 1.4 1.1 1.9 2.9 1.4 3.6 1 .1-.8.4-1.4.7-1.7-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.4 1.3-3.2-.1-.3-.6-1.6.1-3.4 0 0 1-.3 3.4 1.3a11.5 11.5 0 016.2 0c2.4-1.6 3.4-1.3 3.4-1.3.7 1.8.2 3.1.1 3.4.8.8 1.3 1.9 1.3 3.2 0 4.5-2.7 5.5-5.3 5.8.4.3.8 1 .8 2v3c0 .3.2.6.8.5A12 12 0 0012 .5z"
-                                stroke-width="0"
-                                fill="currentColor"
-                            />
-                        </svg>
-                    </a>
-                    <a
-                        href="https://www.linkedin.com/in/jesper-hammer/"
-                        aria-label="LinkedIn"
-                        class="p-2 rounded-sm hover:bg-black/5"
-                    >
-                        <svg
-                            alt="LinkedIn ikon som fører til Jesper Hammer sin LinkedIn profil"
-                            width="20"
-                            height="20"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            aria-hidden
-                            class="stroke-black"
+                            <svg
+                                alt="GitHub ikon som fører til Jesper Hammer sin GitHub profil"
+                                width="18"
+                                height="18"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                aria-hidden
+                                class="stroke-[#171613]"
+                            >
+                                <path
+                                    d="M12 .5a12 12 0 00-3.8 23.4c.6.1.8-.2.8-.5v-2c-3.3.7-4-1.6-4-1.6-.6-1.6-1.4-2-1.4-2-1.2-.8.1-.8.1-.8 1.4.1 2.2 1.4 2.2 1.4 1.1 1.9 2.9 1.4 3.6 1 .1-.8.4-1.4.7-1.7-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.4 1.3-3.2-.1-.3-.6-1.6.1-3.4 0 0 1-.3 3.4 1.3a11.5 11.5 0 016.2 0c2.4-1.6 3.4-1.3 3.4-1.3.7 1.8.2 3.1.1 3.4.8.8 1.3 1.9 1.3 3.2 0 4.5-2.7 5.5-5.3 5.8.4.3.8 1 .8 2v3c0 .3.2.6.8.5A12 12 0 0012 .5z"
+                                    stroke-width="0"
+                                    fill="currentColor"
+                                />
+                            </svg>
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/jesper-hammer/"
+                            aria-label="LinkedIn"
+                            class="flex h-9 w-9 items-center justify-center rounded-full border border-[#171613]/15 transition hover:border-[#171613]/40 hover:bg-[#171613]/5"
                         >
-                            <path
-                                d="M4.98 3.5a2.5 2.5 0 11-.02 0zM3 8.75h4v12H3v-12zM9 8.75h3.8v1.6h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.08v6.37h-4v-5.65c0-1.35-.02-3.08-1.88-3.08-1.88 0-2.17 1.46-2.17 2.98v5.75H9v-12z"
-                                fill="currentColor"
-                            />
-                        </svg>
-                    </a>
+                            <svg
+                                alt="LinkedIn ikon som fører til Jesper Hammer sin LinkedIn profil"
+                                width="18"
+                                height="18"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                aria-hidden
+                                class="stroke-[#171613]"
+                            >
+                                <path
+                                    d="M4.98 3.5a2.5 2.5 0 11-.02 0zM3 8.75h4v12H3v-12zM9 8.75h3.8v1.6h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.08v6.37h-4v-5.65c0-1.35-.02-3.08-1.88-3.08-1.88 0-2.17 1.46-2.17 2.98v5.75H9v-12z"
+                                    fill="currentColor"
+                                />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </header>
 
-            <!-- About -->
-            <section id="about" class="space-y-4">
-                <div class="flex flex-col gap-y-4">
-                    <h2 class="text-2xl font-light">Om meg</h2>
-                    <p class="text-gray-700 font-light">
-                        Jeg heter Jesper Hammer, er
-                        <span id="age"></span> år gammel, og studerer for en
-                        bachelorgrad i Cyber Sikkerhet ved Universitetet i
-                        Bergen. Jeg er aktiv i studentmiljøet og jobber for
-                        studentorganisasjonen
-                        <a
-                            target="_blank"
-                            href="https://echo.uib.no"
-                            rel="noopener noreferrer"
-                            class="text-black font-medium hover:underline"
-                            >echo ⤤</a
-                        >. Hobbyer inkluderer fotografi, matlaging, musikk, og
-                        programmering.
-                    </p>
-                </div>
-                <div
-                    class="border border-x-0 border-t-0 border-b-gray-200 pb-4 pt-10"
-                >
-                    <p class="text-sm font-light text-gray-500">
-                        Jobb og erfaring
-                    </p>
-                </div>
-                <div class="space-y-6">
-                    <div class="flex flex-col gap-y-4">
-                        <h2 class="text-2xl font-light">Bekk og Kartverket</h2>
-                        <p class="text-gray-700 font-light">
-                            Sommeren 2025 jobbet jeg som utvikler for Nordea Liv
-                            og Pensjon i et team med tre andre masterstudenter.
-                            Vi fornyet og utviklet mikrotjenester i Nordeas
-                            interne systemer.
-                        </p>
-                        <p class="text-gray-700 font-light">
-                            Jeg fikk erfaring med Java og Spring Boot, jobbe i
-                            et agilt team, og verktøy som Jira og Confluence.
-                            Jeg lærte å utvikle REST APIer som mikrotjenster og
-                            effektiv testing med JUnit, Mockito, og H2
-                            databaser.
-                        </p>
-                    </div>
-                    <div class="flex flex-col gap-y-4">
-                        <h2 class="text-2xl font-light">
-                            Nordea Liv og Pensjon
-                        </h2>
-                        <p class="text-gray-700 font-light">
-                            Sommeren 2025 jobbet jeg som utvikler for Nordea Liv
-                            og Pensjon i et team med tre andre masterstudenter.
-                            Vi fornyet og utviklet mikrotjenester i Nordeas
-                            interne systemer.
-                        </p>
-                        <p class="text-gray-700 font-light">
-                            Jeg fikk erfaring med Java og Spring Boot, jobbe i
-                            et agilt team, og verktøy som Jira og Confluence.
-                            Jeg lærte å utvikle REST APIer som mikrotjenster og
-                            effektiv testing med JUnit, Mockito, og H2
-                            databaser.
-                        </p>
-                    </div>
-                </div>
-                <div
-                    class="border border-x-0 border-t-0 border-b-gray-200 pb-4 pt-10"
-                >
-                    <p class="text-sm font-light text-gray-500">Verv</p>
-                </div>
-                <div class="space-y-6">
-                    <div class="flex flex-col gap-y-4">
-                        <h2 class="text-2xl font-light">
-                            echo hovedstyre (2025-26)
-                        </h2>
-                        <p class="text-gray-700 font-light">
-                            Jeg var medlem av hovedstyret i echo,
-                            studentorganisasjonen for informatikkstudenter ved
-                            Universitetet i Bergen. Her jobbet jeg med å
-                            forbedre studentmiljøet, tilby både sosiale og
-                            faglige arrangementer, hadde ansvar for
-                            linjeforeningen sin økonimi, og samarbeidet med
-                            relevante bedrifter.
-                        </p>
-                    </div>
-                    <div class="flex flex-col gap-y-4">
-                        <h2 class="text-2xl font-light">Leder i Webkom</h2>
-                        <p class="text-gray-700 font-light">
-                            Webkom er en undergruppe av echo som utvikler echo
-                            sin nettside og andre in-house teknologiske
-                            løsninger. Her har jeg fått mye erfaring med
-                            webutvikling og backend server-programmering med Go.
-                            Jeg er også leder av gruppen og har ansvar for
-                            kontakt med bedrifter og UiB.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <div class="my-12"></div>
-
-            <!-- Projects -->
-            <section id="projects" class="py-12">
-                <h3 class="text-2xl font-light">Prosjekter</h3>
-                <p class="mt-2 text-sm text-gray-600 font-light">
-                    Et utvalg av prosjekter som jeg har utviklet enten alene
-                    eller i et team.
-                </p>
-
-                <div class="mt-6 grid grid-cols-2 gap-6">
-                    <!-- Rum -->
-                    <article
-                        class="p-6 border rounded-sm flex gap-6 hover:shadow-lg transition col-span-2"
+            <main class="pb-12">
+                <section class="pt-12 sm:pt-16">
+                    <h1
+                        class="font-display text-5xl leading-[0.9] text-[#171613] sm:text-7xl"
                     >
-                        <div class="flex-1">
-                            <div class="text-sm text-gray-500 font-light">
-                                Editor
-                            </div>
-                            <h4 class="mt-1 font-semibold text-lg">Rum</h4>
-                            <p class="mt-2 text-sm text-gray-600 font-light">
-                                Terminal editor skrevet i C, 100% native for
-                                Windows, og uten andre biblioteker enn Windows
-                                APIet. Hele editoren er kun 64kB!
-                            </p>
-                            <div class="mt-4 flex gap-4">
-                                <a
-                                    href="https://github.com/jesperkha/rum"
-                                    rel="noopener noreferrer"
-                                    class="font-light text-sm hover:underline"
-                                    >GitHub →</a
-                                >
-                            </div>
-                        </div>
+                        Jesper Hammer
+                    </h1>
+                </section>
 
-                        <div
-                            class="rounded-sm flex items-center justify-center flex-1"
-                        >
-                            <img
-                                class=""
-                                src="assets/rum_demo.gif"
-                                alt="Demonstrasjons GIF av Rum editoren"
-                            />
-                        </div>
-                    </article>
-
-                    <!-- Echo website -->
-                    <article
-                        class="p-6 border rounded-sm flex gap-6 hover:shadow-lg transition col-span-2"
-                    >
-                        <div class="flex-1">
-                            <div class="text-xs text-gray-500 font-light">
-                                Web
-                            </div>
-                            <h4 class="mt-1 font-semibold">echo nettside</h4>
-                            <p class="mt-2 text-sm text-gray-600 font-light">
-                                Nettsiden utviklet og vedlikeholdt av Webkom
-                                studentgruppen.
-                            </p>
-                            <div class="mt-4 flex gap-4">
+                <section id="about" class="pt-12 sm:pt-16">
+                    <div class="grid grid-cols-2">
+                        <div>
+                            <h3
+                                class="font-display text-3xl text-[#171613] sm:text-5xl mb-6"
+                            >
+                                Om meg
+                            </h3>
+                            <p
+                                class="max-w-2xl text-base leading-7 text-[#2f2c28] sm:text-base"
+                            >
+                                Jeg heter Jesper Hammer, er
+                                <span id="age"></span> år gammel, og studerer
+                                for en bachelorgrad i Cyber Sikkerhet ved
+                                Universitetet i Bergen. Jeg er aktiv i
+                                studentmiljøet og jobber for
+                                studentorganisasjonen
                                 <a
+                                    target="_blank"
                                     href="https://echo.uib.no"
-                                    class="font-light text-sm hover:underline"
-                                    >echo.uib.no</a
+                                    rel="noopener noreferrer"
+                                    class="font-medium text-[#171613] underline decoration-[#171613]/40 underline-offset-4 hover:decoration-[#171613]"
+                                    >echo ⤤</a
+                                >. Hobbyer inkluderer fotografi, matlaging,
+                                musikk, og programmering.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-16 border-t border-[#171613]/10 pt-8">
+                        <p
+                            class="text-[10px] font-light uppercase tracking-[0.22em] text-[#171613]/60"
+                        >
+                            Jobb og erfaring
+                        </p>
+                    </div>
+
+                    <div class="mt-8 grid gap-8 lg:grid-cols-2">
+                        <article class="">
+                            <h2 class="font-display text-3xl text-[#171613]">
+                                Bekk og Kartverket
+                            </h2>
+                            <div
+                                class="mt-5 space-y-4 text-base leading-7 text-[#2f2c28]"
+                            >
+                                <p>
+                                    Sommeren 2025 jobbet jeg som utvikler for
+                                    Nordea Liv og Pensjon i et team med tre
+                                    andre masterstudenter. Vi fornyet og
+                                    utviklet mikrotjenester i Nordeas interne
+                                    systemer.
+                                </p>
+                                <p>
+                                    Jeg fikk erfaring med Java og Spring Boot,
+                                    jobbe i et agilt team, og verktøy som Jira
+                                    og Confluence. Jeg lærte å utvikle REST
+                                    APIer som mikrotjenester og effektiv testing
+                                    med JUnit, Mockito, og H2 databaser.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <h2 class="font-display text-3xl text-[#171613]">
+                                Nordea Liv og Pensjon
+                            </h2>
+                            <div
+                                class="mt-5 space-y-4 text-base leading-7 text-[#2f2c28]"
+                            >
+                                <p>
+                                    Sommeren 2025 jobbet jeg som utvikler for
+                                    Nordea Liv og Pensjon i et team med tre
+                                    andre masterstudenter. Vi fornyet og
+                                    utviklet mikrotjenester i Nordeas interne
+                                    systemer.
+                                </p>
+                                <p>
+                                    Jeg fikk erfaring med Java og Spring Boot,
+                                    jobbe i et agilt team, og verktøy som Jira
+                                    og Confluence. Jeg lærte å utvikle REST
+                                    APIer som mikrotjenester og effektiv testing
+                                    med JUnit, Mockito, og H2 databaser.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="mt-16 border-t border-[#171613]/10 pt-8">
+                        <p
+                            class="text-[10px] font-light uppercase tracking-[0.22em] text-[#171613]/60"
+                        >
+                            Verv
+                        </p>
+                    </div>
+
+                    <div class="mt-8 grid gap-8 lg:grid-cols-2">
+                        <article>
+                            <h2 class="font-display text-3xl text-[#171613]">
+                                echo hovedstyre (2025-26)
+                            </h2>
+                            <p class="mt-5 text-base leading-7 text-[#2f2c28]">
+                                Jeg var medlem av hovedstyret i echo,
+                                studentorganisasjonen for informatikkstudenter
+                                ved Universitetet i Bergen. Her jobbet jeg med å
+                                forbedre studentmiljøet, tilby både sosiale og
+                                faglige arrangementer, hadde ansvar for
+                                linjeforeningen sin økonimi, og samarbeidet med
+                                relevante bedrifter.
+                            </p>
+                        </article>
+
+                        <article>
+                            <h2 class="font-display text-3xl text-[#171613]">
+                                Leder i Webkom
+                            </h2>
+                            <p class="mt-5 text-base leading-7 text-[#2f2c28]">
+                                Webkom er en undergruppe av echo som utvikler
+                                echo sin nettside og andre in-house teknologiske
+                                løsninger. Her har jeg fått mye erfaring med
+                                webutvikling og backend server-programmering med
+                                Go. Jeg er også leder av gruppen og har ansvar
+                                for kontakt med bedrifter og UiB.
+                            </p>
+                        </article>
+                    </div>
+                </section>
+
+                <section id="projects" class="pt-20">
+                    <h3
+                        class="font-display text-3xl text-[#171613] sm:text-5xl"
+                    >
+                        Prosjekter
+                    </h3>
+                    <p
+                        class="mt-3 max-w-2xl text-base leading-7 text-[#4b463f]"
+                    >
+                        Et utvalg av prosjekter som jeg har utviklet enten alene
+                        eller i et team.
+                    </p>
+
+                    <div class="mt-8 grid gap-6 lg:grid-cols-2">
+                        <article
+                            class="lg:col-span-2 overflow-hidden border border-[#171613]/10"
+                        >
+                            <div
+                                class="grid gap-6 p-6 lg:grid-cols-[1.1fr_0.9fr] lg:p-8"
+                            >
+                                <div class="flex flex-col justify-between">
+                                    <div>
+                                        <h4
+                                            class="font-display mt-3 text-3xl text-[#171613]"
+                                        >
+                                            Rum
+                                        </h4>
+                                        <p
+                                            class="mt-4 max-w-lg text-base leading-7 text-[#2f2c28]"
+                                        >
+                                            Terminal editor skrevet i C, 100%
+                                            native for Windows, og uten andre
+                                            biblioteker enn Windows APIet. Hele
+                                            editoren er kun 64kB!
+                                        </p>
+                                        <p class="mt-4">
+                                            Gifen viser Rum som redigerer sin
+                                            egen kildekode.
+                                        </p>
+                                    </div>
+                                    <div class="mt-6">
+                                        <a
+                                            href="https://github.com/jesperkha/rum"
+                                            rel="noopener noreferrer"
+                                            class="inline-flex items-center gap-2 text-sm font-light text-[#171613] hover:opacity-70"
+                                            >GitHub →</a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="overflow-hidden p-3">
+                                    <img
+                                        class="h-full w-full object-cover"
+                                        src="assets/rum_demo.gif"
+                                        alt="Demonstrasjons GIF av Rum editoren"
+                                    />
+                                </div>
+                            </div>
+                        </article>
+
+                        <article
+                            class="lg:col-span-2 overflow-hidden border border-[#171613]/10"
+                        >
+                            <div
+                                class="grid gap-6 p-6 lg:grid-cols-[1.1fr_0.9fr] lg:p-8"
+                            >
+                                <div class="flex flex-col justify-between">
+                                    <div>
+                                        <h4
+                                            class="font-display mt-3 text-3xl text-[#171613]"
+                                        >
+                                            echo.uib.no
+                                        </h4>
+                                        <p
+                                            class="mt-4 max-w-lg text-base leading-7 text-[#2f2c28]"
+                                        >
+                                            Nettsiden utviklet og vedlikeholdt
+                                            av Webkom studentgruppen. Den brukes
+                                            av alle, rundt 1000,
+                                            informatikkstudenter ved instituttet
+                                            for informatikk ved UiB.
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="mt-6 flex flex-wrap gap-4 text-sm font-light text-[#171613]"
+                                    >
+                                        <a
+                                            href="https://echo.uib.no"
+                                            class="hover:opacity-70"
+                                            >echo.uib.no</a
+                                        >
+                                        <a
+                                            rel="noopener noreferrer"
+                                            href="https://github.com/echo-webkom/echo-web-mono"
+                                            class="hover:opacity-70"
+                                            >GitHub →</a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="overflow-hidden p-3">
+                                    <img
+                                        class="h-full w-full object-cover"
+                                        src="assets/echo_web.png"
+                                        alt="Skjermbilde av hjemmesiden til echo - Linjeforeningen for informatikk"
+                                    />
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="border border-[#171613]/10 p-6">
+                            <h4
+                                class="font-display mt-3 text-2xl text-[#171613]"
+                            >
+                                Koi
+                            </h4>
+                            <p class="mt-4 text-base leading-7 text-[#2f2c28]">
+                                En compiler for mitt eget språk skrevet i Rust.
+                                Lager native programmer for Linux x86-64.
+                            </p>
+                            <a
+                                rel="noopener noreferrer"
+                                href="https://github.com/jesperkha/koi"
+                                class="mt-6 inline-flex text-sm font-light text-[#171613] hover:opacity-70"
+                                >GitHub →</a
+                            >
+                        </article>
+
+                        <article class="border border-[#171613]/10 p-6">
+                            <h4
+                                class="font-display mt-3 text-2xl text-[#171613]"
+                            >
+                                Nova
+                            </h4>
+                            <p class="mt-4 text-base leading-7 text-[#2f2c28]">
+                                Open source JavaScript engine jeg jobbet på i et
+                                prosjektfag. Vi utviklet ulike funksjoner for
+                                den nye Temporal standarden.
+                            </p>
+                            <a
+                                rel="noopener noreferrer"
+                                href="https://github.com/trynova/nova"
+                                class="mt-6 inline-flex text-sm font-light text-[#171613] hover:opacity-70"
+                                >GitHub →</a
+                            >
+                        </article>
+                    </div>
+                </section>
+
+                <section id="contact" class="pt-20">
+                    <div
+                        class="grid gap-8 border-t border-[#171613]/10 pt-8 lg:grid-cols-2"
+                    >
+                        <div>
+                            <h4 class="font-display text-2xl text-[#171613]">
+                                Kontakt meg
+                            </h4>
+                            <p class="mt-3 text-base leading-7 text-[#2f2c28]">
+                                Ta kontakt for samarbeid, jobb, eller spørsmål!
+                            </p>
+
+                            <div class="max-w-md">
+                                <div
+                                    class="mt-2 text-base font-medium text-[#171613]"
+                                    id="washingmachine"
+                                ></div>
+                                <script>
+                                    document.getElementById(
+                                        "washingmachine",
+                                    ).innerText = String.fromCharCode(
+                                        104,
+                                        97,
+                                        109,
+                                        109,
+                                        101,
+                                        114,
+                                        106,
+                                        101,
+                                        115,
+                                        112,
+                                        64,
+                                        103,
+                                        109,
+                                        97,
+                                        105,
+                                        108,
+                                        46,
+                                        99,
+                                        111,
+                                        109,
+                                    );
+                                </script>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="font-display text-2xl text-[#171613]">
+                                Annet
+                            </h4>
+                            <div
+                                class="mt-5 space-y-3 text-base font-light text-[#171613]"
+                            >
+                                <a
+                                    href="https://github.com/jesperkha"
+                                    class="block hover:opacity-70"
+                                    >GitHub</a
                                 >
                                 <a
-                                    rel="noopener noreferrer"
-                                    href="https://github.com/echo-webkom/echo-web-mono"
-                                    class="font-light text-sm hover:underline"
-                                    >GitHub →</a
+                                    href="https://www.linkedin.com/in/jesper-hammer/"
+                                    class="block hover:opacity-70"
+                                    >LinkedIn</a
                                 >
                             </div>
                         </div>
-                        <div class="flex-1 flex items-center justify-center">
-                            <img
-                                class="rounded"
-                                src="assets/echo_web.png"
-                                alt="Skjermbilde av hjemmesiden til echo - Linjeforeningen for informatikk"
-                            />
-                        </div>
-                    </article>
-
-                    <!-- Koi -->
-                    <article
-                        class="p-6 border rounded-sm hover:shadow-lg transition"
-                    >
-                        <div class="text-xs text-gray-500 font-light">
-                            Språk
-                        </div>
-                        <h4 class="mt-1 font-semibold">Koi</h4>
-                        <p class="mt-2 text-sm text-gray-600 font-light">
-                            En compiler for mitt eget språk skrevet i Rust.
-                            Lager native programmer for Linux x86-64.
-                        </p>
-                        <a
-                            rel="noopener noreferrer"
-                            href="https://github.com/jesperkha/koi"
-                            class="mt-4 inline-block font-light text-sm hover:underline"
-                            >GitHub →</a
-                        >
-                    </article>
-
-                    <!-- Nova -->
-                    <article
-                        class="p-6 border rounded-sm hover:shadow-lg transition"
-                    >
-                        <div class="text-xs text-gray-500 font-light">
-                            Open Source
-                        </div>
-                        <h4 class="mt-1 font-semibold">Nova</h4>
-                        <p class="mt-2 text-sm text-gray-600 font-light">
-                            Open source JavaScript engine jeg jobbet på i et
-                            prosjektfag. Vi utviklet ulike funksjoner for den
-                            nye Temporal standarden.
-                        </p>
-                        <a
-                            rel="noopener noreferrer"
-                            href="https://github.com/trynova/nova"
-                            class="mt-4 inline-block font-light text-sm hover:underline"
-                            >GitHub →</a
-                        >
-                    </article>
-                </div>
-            </section>
-
-            <!-- Contact & Footer -->
-            <section id="contact" class="py-12 mt-12">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-                    <div>
-                        <h4 class="text-xl font-light">Kontakt meg</h4>
-                        <p class="mt-3 text-sm text-gray-700 font-light">
-                            Ta kontakt for samarbeid, jobb, eller spørsmål!
-                        </p>
-
-                        <div class="mt-6 p-4 border rounded-sm w-full md:w-3/4">
-                            <div class="text-xs text-gray-500 font-light">
-                                Epost
-                            </div>
-                            <div
-                                class="mt-1 font-semibold"
-                                id="washingmachine"
-                            ></div>
-                            <script>
-                                document.getElementById(
-                                    "washingmachine",
-                                ).innerText = String.fromCharCode(
-                                    104,
-                                    97,
-                                    109,
-                                    109,
-                                    101,
-                                    114,
-                                    106,
-                                    101,
-                                    115,
-                                    112,
-                                    64,
-                                    103,
-                                    109,
-                                    97,
-                                    105,
-                                    108,
-                                    46,
-                                    99,
-                                    111,
-                                    109,
-                                );
-                            </script>
-                        </div>
                     </div>
 
-                    <div>
-                        <h4 class="text-xl font-light">Annet</h4>
-                        <div class="mt-4 space-y-3 text-sm font-light">
-                            <a
-                                href="https://github.com/jesperkha"
-                                class="block hover:underline"
-                                >GitHub</a
-                            >
-                            <a
-                                href="https://www.linkedin.com/in/jesper-hammer/"
-                                class="block hover:underline"
-                                >LinkedIn</a
-                            >
-                        </div>
-                    </div>
-                </div>
-
-                <footer
-                    class="mt-12 border-t pt-8 text-xs text-gray-500 font-light"
-                >
-                    © <span id="year"></span> Jesper Hammer
-                </footer>
-            </section>
+                    <footer
+                        class="mt-10 border-t border-[#171613]/10 pt-6 text-xs font-light uppercase tracking-[0.18em] text-[#171613]/60"
+                    >
+                        © <span id="year"></span> Jesper Hammer
+                    </footer>
+                </section>
+            </main>
         </div>
 
         <script>
